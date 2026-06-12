@@ -3,11 +3,11 @@ import Image from "next/image";
 import { useRef } from "react";
 
 const photos = [
-  { src: "https://images.unsplash.com/photo-1695350121532-02d2720749d1?w=500&q=80", alt: "Pengrajin batik" },
-  { src: "https://images.unsplash.com/photo-1695306441929-0082158cfc27?w=500&q=80", alt: "Proses membatik" },
-  { src: "https://images.unsplash.com/photo-1586319826907-1ff4aadbaddc?w=500&q=80", alt: "Motif batik" },
-  { src: "https://images.unsplash.com/photo-1609407683391-7d127a00b3e1?w=500&q=80", alt: "Koleksi batik" },
-  { src: "https://images.unsplash.com/photo-1672716912467-fd99b71cf780?w=500&q=80", alt: "Detail batik" },
+  { src: "/images/about1.jpg", alt: "Pengrajin batik" },
+  { src: "/images/about2.jpg", alt: "Proses membatik" },
+  { src: "/images/hero.jpg", alt: "Motif batik" },
+  { src: "/images/batik5.jpg", alt: "Koleksi batik" },
+  { src: "/images/batik1.jpg", alt: "Detail batik" },
 ];
 
 export default function Tentang() {

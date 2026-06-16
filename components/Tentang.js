@@ -15,16 +15,16 @@ export default function Tentang() {
   const scroll = (dir) => ref.current?.scrollBy({ left: dir * 220, behavior: "smooth" });
 
   return (
-    <section id="tentang" className="py-24 bg-indigo-950 text-white">
-      <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+    <section id="tentang" className="py-12 md:py-24 bg-indigo-950 text-white overflow-x-hidden">
+      <div className="max-w-6xl mx-auto px-4 md:px-6 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
 
         {/* Text */}
         <div>
           <p className="text-yellow-400 font-semibold tracking-widest uppercase text-sm mb-3">Kisah Kami</p>
-          <h2 className="text-4xl font-bold mb-6 leading-tight">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 leading-tight">
             Warisan Generasi, <span className="text-yellow-400">Kualitas Terjaga</span>
           </h2>
-          <p className="text-indigo-200 text-lg leading-relaxed mb-6">
+          <p className="text-indigo-200 text-base md:text-lg leading-relaxed mb-6">
             Batik Nala lahir dari kecintaan keluarga Nala terhadap seni batik Yogyakarta sejak tahun 2008.
             Bermula dari sebuah workshop kecil di Kotagede, kini kami melayani pelanggan dari seluruh Indonesia.
           </p>
@@ -33,7 +33,7 @@ export default function Tentang() {
             tradisional secara turun-temurun. Kami berkomitmen menjaga keaslian motif sambil menghadirkan
             desain yang relevan dengan gaya hidup modern.
           </p>
-          <div className="grid grid-cols-2 gap-5">
+          <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-2 gap-4 md:gap-5">
             {[
               { icon: "✋", title: "Handmade", desc: "Dibuat tangan pengrajin ahli" },
               { icon: "🌿", title: "Pewarna Alam", desc: "Bahan pewarna alami & aman" },
@@ -52,17 +52,17 @@ export default function Tentang() {
         </div>
 
         {/* Carousel */}
-        <div className="relative">
-          <div className="absolute top-3 right-3 z-10 bg-yellow-500 text-indigo-950 px-4 py-2 rounded-full shadow-lg text-xs font-bold">
+        <div className="relative w-full">
+          <div className="absolute top-3 right-3 z-10 bg-yellow-500 text-indigo-950 px-3 py-1.5 md:px-4 md:py-2 rounded-full shadow-lg text-xs font-bold">
             🏅 Kerajinan Terbaik 2023
           </div>
 
           {/* Scrollable track */}
-          <div ref={ref} className="flex gap-4 overflow-x-auto pb-3"
+          <div ref={ref} className="flex gap-3 md:gap-4 overflow-x-auto pb-3 w-full"
             style={{ scrollSnapType: "x mandatory", scrollbarWidth: "none", WebkitOverflowScrolling: "touch" }}>
             {photos.map((p, i) => (
               <div key={p.alt} className="relative flex-shrink-0 rounded-2xl overflow-hidden group"
-                style={{ width: "200px", height: i % 2 === 0 ? "280px" : "240px", marginTop: i % 2 !== 0 ? "40px" : "0", scrollSnapAlign: "start" }}>
+                style={{ width: "160px", height: i % 2 === 0 ? "240px" : "200px", marginTop: i % 2 !== 0 ? "40px" : "0", scrollSnapAlign: "start" }}>
                 <Image src={p.src} alt={p.alt} fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
               </div>
             ))}

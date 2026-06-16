@@ -10,11 +10,11 @@ export default function Hero() {
       />
       <div className="absolute inset-0 bg-indigo-950/70" />
 
-      <div className="relative z-10 text-center px-6 max-w-3xl mx-auto">
+      <div className="relative z-10 text-center px-4 md:px-6 max-w-3xl mx-auto pt-20">
         <p className="text-yellow-400 font-semibold tracking-widest uppercase text-sm mb-4">
           Koleksi Premium
         </p>
-        <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight mb-6">
+        <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight mb-6">
           Batik<span className="text-yellow-400"> Nala</span>
         </h1>
         <p className="text-indigo-100 text-lg md:text-xl mb-4 leading-relaxed">
@@ -42,8 +42,8 @@ export default function Hero() {
             { num: "10rb+", label: "Pelanggan Puas" },
           ].map((s) => (
             <div key={s.label} className="text-center">
-              <div className="text-3xl font-bold text-yellow-400">{s.num}</div>
-              <div className="text-sm text-indigo-200 mt-1">{s.label}</div>
+              <div className="text-2xl md:text-3xl font-bold text-yellow-400">{s.num}</div>
+              <div className="text-xs md:text-sm text-indigo-200 mt-1">{s.label}</div>
             </div>
           ))}
         </div>

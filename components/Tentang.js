@@ -53,7 +53,7 @@ export default function Tentang() {
 
         {/* Carousel */}
         <div className="relative w-full">
-          <div className="absolute top-3 right-3 z-10 bg-yellow-500 text-indigo-950 px-3 py-1.5 md:px-4 md:py-2 rounded-full shadow-lg text-xs font-bold">
+          <div className="inline-flex mb-3 bg-yellow-500 text-indigo-950 px-3 py-1.5 md:px-4 md:py-2 rounded-full shadow-lg text-xs font-bold">
             🏅 Kerajinan Terbaik 2023
           </div>
 
